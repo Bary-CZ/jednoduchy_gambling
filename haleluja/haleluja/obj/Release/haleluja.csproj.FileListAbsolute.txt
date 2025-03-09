@@ -1,0 +1,10 @@
+C:\Users\Bary\source\repos\haleluja\haleluja\bin\Release\haleluja.exe.config
+C:\Users\Bary\source\repos\haleluja\haleluja\bin\Release\haleluja.exe
+C:\Users\Bary\source\repos\haleluja\haleluja\bin\Release\haleluja.pdb
+C:\Users\Bary\source\repos\haleluja\haleluja\obj\Release\haleluja.csproj.AssemblyReference.cache
+C:\Users\Bary\source\repos\haleluja\haleluja\obj\Release\haleluja.Form1.resources
+C:\Users\Bary\source\repos\haleluja\haleluja\obj\Release\haleluja.Properties.Resources.resources
+C:\Users\Bary\source\repos\haleluja\haleluja\obj\Release\haleluja.csproj.GenerateResource.cache
+C:\Users\Bary\source\repos\haleluja\haleluja\obj\Release\haleluja.csproj.CoreCompileInputs.cache
+C:\Users\Bary\source\repos\haleluja\haleluja\obj\Release\haleluja.exe
+C:\Users\Bary\source\repos\haleluja\haleluja\obj\Release\haleluja.pdb
