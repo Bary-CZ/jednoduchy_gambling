@@ -1,8 +1,11 @@
 # jednoduchy_gambling
-tlacitko generuje nahodne cislo a pokud se trefi do range vyhral jsi + pocitadlo winrate
+jednoduche automaty
+tlacitko generuje nahodne cislo a pokud se trefi do range vyhral jsi 
+ +pocitani winrate
 to do list:
 -grafika
 -vic moznosti
 -zvuk efekty
--web zobrazeni na localhostu?
+-web
 -opravit bugy
+-konto
