@@ -14,7 +14,12 @@ namespace haleluja
 {
     public partial class Form1 : Form
     {
-        int rnd, cislo, vyhra, prohra, kol, winrate, penize;
+        int cislo, vyhra, prohra, kol, winrate, penize, sance, win, konto;
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -24,8 +29,9 @@ namespace haleluja
             button2.Visible = false;
             textBox1.Visible = false;
             label9.Visible = true;
-            //test commit
-        }   
+            konto = penize + konto;
+
+        }
 
         string pocet;
         public Form1()
@@ -38,26 +44,27 @@ namespace haleluja
         private void button1_Click(object sender, EventArgs e)
         {
             kol++;
-        
-        Random rnd = new Random(); 
+
+            Random rnd = new Random();
             rnd.Next();
-            cislo = rnd.Next(0,1000);
-            if (cislo >= 633)
+            cislo = rnd.Next(0, 1000);
+            sance = 633;
+            if (cislo >= sance)
             {
                 label1.Text = ("vyhral jsi ");
                 label1.ForeColor = Color.Green;
                 vyhra++;
                 label5.Text = vyhra.ToString();
-              
+
             }
             else
             {
                 label1.Text = ("prohral jsi");
                 prohra++;
                 label1.ForeColor = Color.Red;
-                
+
             }
-            
+
             label2.Text = cislo.ToString();
             if (kol > 0)
             {
@@ -65,10 +72,38 @@ namespace haleluja
                 label7.Text = winrate.ToString();
                 label7.Text = (winrate + "%");
             }
+            gamble();
 
             //pocet vyher label5
             //winrate label7
-            //
+            void gamble()
+            {
+
+                label9.Text = konto.ToString();
+                if (cislo >= sance)
+                {
+                    rnd.Next();
+                    win = rnd.Next(10, 200);
+                    konto = konto + win;
+                }
+                else
+                {
+                    rnd.Next();
+                    win = rnd.Next(10, 200);
+                    konto = konto - win;
+                }
+                if (konto <= 0)
+                {
+                    label11.Visible = true;
+                    button2.Visible = true;
+                    textBox1.Visible = true;
+                    label9.Visible = false;
+                    MessageBox.Show("Prohral jsi vsechny penize");
+                }
+                label9.Text = konto.ToString();
+                //priste BigWin void
+
+            }
         }
     }
 }
