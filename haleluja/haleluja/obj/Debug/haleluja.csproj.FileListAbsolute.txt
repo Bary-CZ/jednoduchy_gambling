@@ -8,3 +8,13 @@ C:\Users\Bary\source\repos\haleluja\haleluja\obj\Debug\haleluja.csproj.GenerateR
 C:\Users\Bary\source\repos\haleluja\haleluja\obj\Debug\haleluja.csproj.CoreCompileInputs.cache
 C:\Users\Bary\source\repos\haleluja\haleluja\obj\Debug\haleluja.exe
 C:\Users\Bary\source\repos\haleluja\haleluja\obj\Debug\haleluja.pdb
+C:\Users\a2202\Source\Repos\jednoduchy_gambling\haleluja\haleluja\obj\Debug\haleluja.csproj.AssemblyReference.cache
+C:\Users\a2202\Source\Repos\jednoduchy_gambling\haleluja\haleluja\obj\Debug\haleluja.Form1.resources
+C:\Users\a2202\Source\Repos\jednoduchy_gambling\haleluja\haleluja\obj\Debug\haleluja.Properties.Resources.resources
+C:\Users\a2202\Source\Repos\jednoduchy_gambling\haleluja\haleluja\obj\Debug\haleluja.csproj.GenerateResource.cache
+C:\Users\a2202\Source\Repos\jednoduchy_gambling\haleluja\haleluja\obj\Debug\haleluja.csproj.CoreCompileInputs.cache
+C:\Users\a2202\Source\Repos\jednoduchy_gambling\haleluja\haleluja\obj\Debug\haleluja.exe
+C:\Users\a2202\Source\Repos\jednoduchy_gambling\haleluja\haleluja\obj\Debug\haleluja.pdb
+C:\Users\a2202\Source\Repos\jednoduchy_gambling\haleluja\haleluja\bin\Debug\haleluja.exe.config
+C:\Users\a2202\Source\Repos\jednoduchy_gambling\haleluja\haleluja\bin\Debug\haleluja.exe
+C:\Users\a2202\Source\Repos\jednoduchy_gambling\haleluja\haleluja\bin\Debug\haleluja.pdb

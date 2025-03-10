@@ -24,6 +24,7 @@ namespace haleluja
             button2.Visible = false;
             textBox1.Visible = false;
             label9.Visible = true;
+            //test commit
         }   
 
         string pocet;
