@@ -14,7 +14,7 @@ namespace haleluja
 {
     public partial class Form1 : Form
     {
-        int cislo, vyhra, prohra, kol, winrate, penize, sance, win, konto;
+        int cislo, vyhra, prohra, kol, winrate, penize, sance, win, konto, sancenawin, i;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -73,9 +73,9 @@ namespace haleluja
                 label7.Text = (winrate + "%");
             }
             gamble();
+            biggamble();
+            sancenawin = 0;
 
-            //pocet vyher label5
-            //winrate label7
             void gamble()
             {
 
@@ -91,6 +91,7 @@ namespace haleluja
                     rnd.Next();
                     win = rnd.Next(10, 200);
                     konto = konto - win;
+                    sancenawin = sancenawin + win;
                 }
                 if (konto <= 0)
                 {
@@ -101,8 +102,26 @@ namespace haleluja
                     MessageBox.Show("Prohral jsi vsechny penize");
                 }
                 label9.Text = konto.ToString();
-                //priste BigWin void
-
+               
+            }
+            void biggamble()
+            {
+                sancenawin = cislo + sancenawin;
+                if (sancenawin == 777 )
+                {
+                    rnd.Next();
+                    win = rnd.Next(konto*10, konto*100);
+                    MessageBox.Show("Gratuluji vyhral jsi jackpot");
+                    konto = konto + win;
+                    i = 1;
+                    label9.Text = konto.ToString();
+                }
+                if (i == 1)
+                {
+                    sancenawin = 0;
+                    i = 0;
+                }
+                label12.Text = sancenawin.ToString();
             }
         }
     }

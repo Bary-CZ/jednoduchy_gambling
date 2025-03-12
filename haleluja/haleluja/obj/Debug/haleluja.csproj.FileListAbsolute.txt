@@ -28,3 +28,13 @@ D:\programovani\jednoduchy_gambling-Main\jednoduchy_gambling-Main\haleluja\halel
 D:\programovani\jednoduchy_gambling-Main\jednoduchy_gambling-Main\haleluja\haleluja\haleluja\obj\Debug\haleluja.csproj.CoreCompileInputs.cache
 D:\programovani\jednoduchy_gambling-Main\jednoduchy_gambling-Main\haleluja\haleluja\haleluja\obj\Debug\haleluja.exe
 D:\programovani\jednoduchy_gambling-Main\jednoduchy_gambling-Main\haleluja\haleluja\haleluja\obj\Debug\haleluja.pdb
+C:\Users\Bary\Desktop\projekt gamble\haleluja\haleluja\bin\Debug\haleluja.exe.config
+C:\Users\Bary\Desktop\projekt gamble\haleluja\haleluja\bin\Debug\haleluja.exe
+C:\Users\Bary\Desktop\projekt gamble\haleluja\haleluja\bin\Debug\haleluja.pdb
+C:\Users\Bary\Desktop\projekt gamble\haleluja\haleluja\obj\Debug\haleluja.csproj.AssemblyReference.cache
+C:\Users\Bary\Desktop\projekt gamble\haleluja\haleluja\obj\Debug\haleluja.Form1.resources
+C:\Users\Bary\Desktop\projekt gamble\haleluja\haleluja\obj\Debug\haleluja.Properties.Resources.resources
+C:\Users\Bary\Desktop\projekt gamble\haleluja\haleluja\obj\Debug\haleluja.csproj.GenerateResource.cache
+C:\Users\Bary\Desktop\projekt gamble\haleluja\haleluja\obj\Debug\haleluja.csproj.CoreCompileInputs.cache
+C:\Users\Bary\Desktop\projekt gamble\haleluja\haleluja\obj\Debug\haleluja.exe
+C:\Users\Bary\Desktop\projekt gamble\haleluja\haleluja\obj\Debug\haleluja.pdb
