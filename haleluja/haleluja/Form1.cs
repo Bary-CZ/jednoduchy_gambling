@@ -14,11 +14,13 @@ namespace haleluja
 {
     public partial class Form1 : Form
     {
-        int cislo, vyhra, prohra, kol, winrate, penize, sance, win, konto, sancenawin, i;
-
+        int cislo, vyhra, prohra, kol, winrate, penize, sance, win, konto, sancenawin, i, j;
+        int pocitadlo, unlucky;
+        string pocet;
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Vítej ve hře, zadej peníze a začni hrát, pokud prohraješ všechny peníze můžeš si přidat další, hodně štěstí");
+            textBox1.Text = "0";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -32,12 +34,11 @@ namespace haleluja
             konto = penize + konto;
 
         }
-
-        string pocet;
         public Form1()
         {
             InitializeComponent();
             kol = 0;
+            sancenawin = 0;
             label9.Visible = false;
         }
 
@@ -54,7 +55,12 @@ namespace haleluja
                 label1.Text = ("vyhral jsi ");
                 label1.ForeColor = Color.Green;
                 vyhra++;
+                prohra = 0;
                 label5.Text = vyhra.ToString();
+                pocitadlo = pocitadlo + 10;
+                rnd.Next();
+                sancenawin = sancenawin - rnd.Next(1, 5);
+                pocitadlo = pocitadlo + rnd.Next(1, 60);
 
             }
             else
@@ -62,7 +68,22 @@ namespace haleluja
                 label1.Text = ("prohral jsi");
                 prohra++;
                 label1.ForeColor = Color.Red;
-
+                rnd.Next();
+                pocitadlo = pocitadlo - rnd.Next(1, 20);
+                sancenawin = sancenawin + rnd.Next(1, 20);
+                if (prohra == 5 & sancenawin < 0)
+                {
+                    sancenawin = sancenawin + rnd.Next(10, 100);
+                    prohra = 0;
+                    MessageBox.Show("jsi na tom špatně, upravuji šanci na JACKPOT");
+                    unlucky++;
+                }
+                if (unlucky == 5)
+                {
+                    MessageBox.Show("jsi na tom velmi špatně, upravuji šanci na JACKPOT");
+                    sancenawin = sancenawin + rnd.Next(150, 200);
+                    unlucky = 0;
+                }
             }
 
             label2.Text = cislo.ToString();
@@ -74,7 +95,7 @@ namespace haleluja
             }
             gamble();
             biggamble();
-            sancenawin = 0;
+            bigwin();
 
             void gamble()
             {
@@ -83,15 +104,17 @@ namespace haleluja
                 if (cislo >= sance)
                 {
                     rnd.Next();
-                    win = rnd.Next(10, 200);
+                    win = rnd.Next(10, 100);
                     konto = konto + win;
+                    win = 1;
+
                 }
                 else
                 {
                     rnd.Next();
-                    win = rnd.Next(10, 200);
+                    win = rnd.Next(10, 67);
                     konto = konto - win;
-                    sancenawin = sancenawin + win;
+                    
                 }
                 if (konto <= 0)
                 {
@@ -106,22 +129,34 @@ namespace haleluja
             }
             void biggamble()
             {
-                sancenawin = cislo + sancenawin;
-                if (sancenawin == 777 )
+                
+                if (sancenawin >= 777 )
                 {
                     rnd.Next();
-                    win = rnd.Next(konto*10, konto*100);
+                    win = rnd.Next(10, 100);
                     MessageBox.Show("Gratuluji vyhral jsi jackpot");
-                    konto = konto + win;
+                    konto = konto * win;
                     i = 1;
                     label9.Text = konto.ToString();
-                }
+                    sancenawin = 0;                }
                 if (i == 1)
                 {
                     sancenawin = 0;
                     i = 0;
                 }
-                label12.Text = sancenawin.ToString();
+             // label12.Text = sancenawin.ToString();
+            }
+            void bigwin()
+            {
+                if (pocitadlo > 1000 & cislo >= sance)
+                {
+                    rnd.Next();
+                    win = rnd.Next(1000, 10000);
+                    konto = konto + win;
+                    pocitadlo = 0;
+                    label9.Text = konto.ToString();
+                    MessageBox.Show("Gratuluji vyhral jsi velkou vyhru");
+                }
             }
         }
     }
