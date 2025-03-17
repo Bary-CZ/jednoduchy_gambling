@@ -21,6 +21,8 @@ namespace haleluja
         {
             MessageBox.Show("Vítej ve hře, zadej peníze a začni hrát, pokud prohraješ všechny peníze můžeš si přidat další, hodně štěstí");
             textBox1.Text = "0";
+            //label 12 jackpot odds
+            label12.Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
