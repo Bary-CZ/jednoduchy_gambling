@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
 using System.Windows.Forms;
 
 namespace haleluja
@@ -47,22 +39,21 @@ namespace haleluja
         private void button1_Click(object sender, EventArgs e)
         {
             kol++;
-
+            label5.Text = kol.ToString();
             Random rnd = new Random();
             rnd.Next();
             cislo = rnd.Next(0, 1000);
-            sance = 633;
+            sance = 700;
             if (cislo >= sance)
             {
                 label1.Text = ("vyhral jsi ");
                 label1.ForeColor = Color.Green;
                 vyhra++;
                 prohra = 0;
-                label5.Text = vyhra.ToString();
                 pocitadlo = pocitadlo + 10;
                 rnd.Next();
                 sancenawin = sancenawin - rnd.Next(1, 5);
-                pocitadlo = pocitadlo + rnd.Next(1, 60);
+                pocitadlo = pocitadlo + rnd.Next(1, 100);
 
             }
             else
@@ -72,7 +63,7 @@ namespace haleluja
                 label1.ForeColor = Color.Red;
                 rnd.Next();
                 pocitadlo = pocitadlo - rnd.Next(1, 20);
-                sancenawin = sancenawin + rnd.Next(1, 20);
+                sancenawin = sancenawin + rnd.Next(1, 30);
                 if (prohra == 5 & sancenawin < 0)
                 {
                     sancenawin = sancenawin + rnd.Next(10, 100);
@@ -116,7 +107,7 @@ namespace haleluja
                     rnd.Next();
                     win = rnd.Next(10, 67);
                     konto = konto - win;
-                    
+
                 }
                 if (konto <= 0)
                 {
@@ -127,12 +118,12 @@ namespace haleluja
                     MessageBox.Show("Prohral jsi vsechny penize");
                 }
                 label9.Text = konto.ToString();
-               
+
             }
             void biggamble()
             {
-                
-                if (sancenawin >= 777 )
+
+                if (sancenawin >= 777)
                 {
                     rnd.Next();
                     win = rnd.Next(10, 100);
@@ -140,13 +131,14 @@ namespace haleluja
                     konto = konto * win;
                     i = 1;
                     label9.Text = konto.ToString();
-                    sancenawin = 0;                }
+                    sancenawin = 0;
+                }
                 if (i == 1)
                 {
                     sancenawin = 0;
                     i = 0;
                 }
-             // label12.Text = sancenawin.ToString();
+                // label12.Text = sancenawin.ToString();
             }
             void bigwin()
             {
