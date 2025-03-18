@@ -10,3 +10,4 @@ to do list:
 -zvuk efekty
 -web
 -opravit bugy
+-test 
