@@ -1,13 +1,9 @@
 # jednoduchy_gambling
-jednoduche automaty
-tlacitko generuje nahodne cislo a pokud se trefi do range vyhral jsi 
+AUTOMATY GAMBLE A ZDARMA WOW 
  +pocitani winrate	 
  +konto
+ +jackpot
+ +error handeling
+ +optimalizace
 to do list:
--bigwin
--grafika
--vic moznosti
 -zvuk efekty
--web
--opravit bugy
--test 
