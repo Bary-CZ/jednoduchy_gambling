@@ -18,3 +18,13 @@ C:\Users\Bary\Desktop\projekt gamble\haleluja\haleluja\obj\Release\haleluja.cspr
 C:\Users\Bary\Desktop\projekt gamble\haleluja\haleluja\obj\Release\haleluja.csproj.CoreCompileInputs.cache
 C:\Users\Bary\Desktop\projekt gamble\haleluja\haleluja\obj\Release\haleluja.exe
 C:\Users\Bary\Desktop\projekt gamble\haleluja\haleluja\obj\Release\haleluja.pdb
+D:\programovani\projekt gamba\jednoduchy_gambling\haleluja\haleluja\bin\Release\haleluja.exe.config
+D:\programovani\projekt gamba\jednoduchy_gambling\haleluja\haleluja\bin\Release\haleluja.exe
+D:\programovani\projekt gamba\jednoduchy_gambling\haleluja\haleluja\bin\Release\haleluja.pdb
+D:\programovani\projekt gamba\jednoduchy_gambling\haleluja\haleluja\obj\Release\haleluja.csproj.AssemblyReference.cache
+D:\programovani\projekt gamba\jednoduchy_gambling\haleluja\haleluja\obj\Release\haleluja.Form1.resources
+D:\programovani\projekt gamba\jednoduchy_gambling\haleluja\haleluja\obj\Release\haleluja.Properties.Resources.resources
+D:\programovani\projekt gamba\jednoduchy_gambling\haleluja\haleluja\obj\Release\haleluja.csproj.GenerateResource.cache
+D:\programovani\projekt gamba\jednoduchy_gambling\haleluja\haleluja\obj\Release\haleluja.csproj.CoreCompileInputs.cache
+D:\programovani\projekt gamba\jednoduchy_gambling\haleluja\haleluja\obj\Release\haleluja.exe
+D:\programovani\projekt gamba\jednoduchy_gambling\haleluja\haleluja\obj\Release\haleluja.pdb

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace haleluja
@@ -7,6 +8,13 @@ namespace haleluja
     public partial class Form1 : Form
     {
         int cislo, vyhra, prohra, kol, winrate, penize, sance, win, sancenawin, i;
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            bonus();
+            button3.Visible = false;
+        }
+
         int pocitadlo, unlucky, parsedPenize;
         long konto;
         private void Form1_Load(object sender, EventArgs e)
@@ -128,6 +136,7 @@ namespace haleluja
                     textBox1.Visible = true;
                     label9.Visible = false;
                     MessageBox.Show("Prohral jsi vsechny penize");
+                    button3.Visible = true;
                 }
                 label9.Text = konto.ToString();
 
@@ -169,6 +178,12 @@ namespace haleluja
                     MessageBox.Show("Gratuluji vyhral jsi velkou vyhru");
                 }
             }
+        }
+
+        private void bonus()
+        {
+            konto += 500;
+            label9.Text = konto.ToString();
         }
     }
 }
